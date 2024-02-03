@@ -1,24 +1,11 @@
 import { StyleSheet, Image, Text, View } from "react-native";
 import { TweetType } from "@/types";
-import { Entypo, EvilIcons } from "@expo/vector-icons";
+import { Entypo } from "@expo/vector-icons";
 import React from "react";
+import IconButton from "./IconButton";
 
 type TweetProps = {
   tweet: TweetType;
-};
-
-type IconButtonProps = {
-  icon: React.ComponentProps<typeof EvilIcons>["name"];
-  text?: string | number;
-};
-
-const IconButton = ({ icon, text }: IconButtonProps) => {
-  return (
-    <View style={{ flexDirection: "row", alignItems: "center" }}>
-      <EvilIcons name={icon} size={22} color={"gray"} />
-      <Text style={{ fontSize: 12, color: "gray" }}>{text}</Text>
-    </View>
-  );
 };
 
 const Tweet = ({ tweet }: TweetProps) => {
@@ -45,7 +32,7 @@ const Tweet = ({ tweet }: TweetProps) => {
           <IconButton icon="retweet" text={tweet.numberOfRetweets} />
           <IconButton icon="heart" text={tweet.numberOfLikes} />
           <IconButton icon="chart" text={tweet.impressions || 0} />
-          <IconButton icon="retweet" />
+          <IconButton icon="share-apple" />
         </View>
       </View>
     </View>
