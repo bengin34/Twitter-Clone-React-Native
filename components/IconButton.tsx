@@ -1,5 +1,4 @@
-import { Image, Text, View } from "react-native";
-
+import { Text, View } from "react-native";
 import { EvilIcons } from "@expo/vector-icons";
 
 type IconButtonProps = {
