@@ -9,7 +9,7 @@ import { useClientOnlyValue } from "@/components/useClientOnlyValue";
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: "feed",
+  initialRouteName: "two",
 };
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
