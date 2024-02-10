@@ -9,7 +9,7 @@ import { useClientOnlyValue } from "@/components/useClientOnlyValue";
 
 export const unstable_settings = {
   // Ensure that reloading on `/modal` keeps a back button present.
-  initialRouteName: "two",
+  initialRouteName: "feed",
 };
 
 // You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
@@ -46,7 +46,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="feed"
         options={{
-          title: "Tab One",
+          title: "Feed",
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Link href="/modal" asChild>
